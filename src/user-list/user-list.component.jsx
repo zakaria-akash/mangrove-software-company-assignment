@@ -1,10 +1,10 @@
 import React from "react";
-// import "./user-list.styles.css";
+import "./user-list.styles.css";
 
 const UserList = (props) => {
   return props.users.map((user) => {
     return (
-      <tr>
+      <tr className="user-list">
         <td>{user.id}.</td>
         <td>{user.name}</td>
         <td>{user.email}</td>

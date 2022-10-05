@@ -35,7 +35,10 @@ class App extends Component {
     return (
       <div className="App">
         <h1>User Collection Table</h1>
-        <SearchBox placeholder="search user" handleChange={this.handleChange} />
+        <SearchBox
+          placeholder="search for users' name or email"
+          handleChange={this.handleChange}
+        />
         <table>
           <thead>
             <tr>
@@ -47,26 +50,17 @@ class App extends Component {
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>
-                <hr />
-              </td>
-              <td>
-                <hr />
-              </td>
-              <td>
-                <hr />
-              </td>
-              <td>
-                <hr />
-              </td>
-              <td>
-                <hr />
-              </td>
-            </tr>
             <UserList users={filteredUsers} />
           </tbody>
         </table>
+        <footer>
+          <hr />
+          <p>
+            Assessment Task by Mangrove Software & IT Company Limited for the
+            position of Junior Software Developer.
+          </p>
+          <p>&#169; 2022 <a href="https://github.com/zakaria-akash">Zakaria Ibrahim</a> (zakaria.93@yahoo.com)</p>
+        </footer>
       </div>
     );
   }

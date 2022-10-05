@@ -1,0 +1,13 @@
+.search-box {
+    width: 30%;
+    height: 3rem;
+    text-align: center;
+    font-size: 18px;
+    margin: 1rem auto;
+}
+
+.search-box:hover {
+    background-color: black;
+    color: floralwhite;
+    border: 2px solid floralwhite;
+}
